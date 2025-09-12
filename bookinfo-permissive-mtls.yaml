@@ -1,0 +1,8 @@
+apiVersion: security.istio.io/v1
+kind: PeerAuthentication
+metadata:
+  name: bookinfo-permissive
+  namespace: bookinfo
+spec:
+  mtls:
+    mode: STRICT
